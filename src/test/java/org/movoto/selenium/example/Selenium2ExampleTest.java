@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,6 +38,9 @@ public class Selenium2ExampleTest {
         // Notice that the remainder of the code relies on the interface,
         // not the implementation.
         driver = new ChromeDriver();
+
+        //set window size
+        driver.manage().window().setSize(new Dimension(1300,1000));
 
         // And now use this to visit myBlog
         // Alternatively the same thing can be done like this
