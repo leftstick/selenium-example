@@ -40,11 +40,11 @@ public class Selenium2ExampleTest {
         driver = new ChromeDriver();
 
         //set window size
-        driver.manage().window().setSize(new Dimension(1300,1000));
+        driver.manage().window().setSize(new Dimension(1300, 1000));
 
         // And now use this to visit myBlog
         // Alternatively the same thing can be done like this
-        // driver.navigate().to("http://leftstick.github.io/");
+        // driver.navigate().to(testUrl);
         driver.get(testUrl);
     }
 
@@ -52,18 +52,20 @@ public class Selenium2ExampleTest {
     public void testTitle() throws IOException {
 
         // Find elements by attribute lang="READ_MORE_BTN"
-        List<WebElement> elements = driver.findElements(By.cssSelector("[lang=\"READ_MORE_BTN\"]"));
+        List<WebElement> elements = driver
+                .findElements(By.cssSelector("[lang=\"READ_MORE_BTN\"]"));
 
         //Click the selected button
         elements.get(0).click();
 
 
         assertTrue("The page title should be chagned as expected",
-                (new WebDriverWait(driver, 3)).until(new ExpectedCondition<Boolean>() {
-                    public Boolean apply(WebDriver d) {
-                        return d.getTitle().equals("以BDD手写依赖注入");
-                    }
-                })
+                (new WebDriverWait(driver, 3))
+                        .until(new ExpectedCondition<Boolean>() {
+                            public Boolean apply(WebDriver d) {
+                                return d.getTitle().equals("以BDD手写依赖注入");
+                            }
+                        })
         );
     }
 
