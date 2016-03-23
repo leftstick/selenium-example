@@ -1,11 +1,10 @@
-# selenium-chrome-example
-An example project of selenium using ChromeWebDriver
+# selenium-example
+An example project of selenium using ChromeWebDriver, HtmlUnitDriver, FirefoxFriver
 
 
 ## Prerequisites ##
 
 * Have [java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed
-* Have [Chrome Driver](https://sites.google.com/a/chromium.org/chromedriver/) installed
 * Have [maven](http://maven.apache.org/) installed
 
 
@@ -23,4 +22,4 @@ The result looks as following:
 
 ## LICENSE ##
 
-[MIT License](https://raw.githubusercontent.com/leftstick/selenium-chrome-example/master/LICENSE)
+[MIT License](https://raw.githubusercontent.com/leftstick/selenium-example/master/LICENSE)
