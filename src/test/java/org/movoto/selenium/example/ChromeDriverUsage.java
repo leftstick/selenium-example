@@ -20,7 +20,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by haozuo on 3/22/16.
  */
-public class Selenium2ExampleTest {
+public class ChromeDriverUsage {
 
     private String testUrl;
     private WebDriver driver;
